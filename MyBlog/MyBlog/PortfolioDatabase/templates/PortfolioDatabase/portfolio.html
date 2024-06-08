@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+</head>
+<body>
+    <h1>Portfolio</h1>
+    <ul>
+        {% for item in portfolio_items %}
+        <li><strong>{{ item.name }}</strong>: {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
